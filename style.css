@@ -1,0 +1,185 @@
+.heading{
+  text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+.main-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+.centered-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.centered-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.centered-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.paragraph-header {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+  
+  tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  
+  th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+caption{
+    width:50%;
+}
+
+a:link {
+    color: rgb(19, 9, 9);
+  }
+  a:visited {
+    color: rgb(43, 3, 33);
+  }
+  a:hover {
+    color: rgb(67, 4, 88);
+  }
+  a:active {
+    color: rgb(46, 10, 57);
+  }
+  .submit-btn {
+    padding: 2px;
+    background-color: 187,179,169;
+    font: white;
+    
+  }
+  
+  .submit-btn:hover {
+    background-color: beige;
+  }
+ 
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-transform: capitalize; /* Convert headings to sentence case */
+}
+
+/* Hover effect for table rows and cells */
+tr:hover, td:hover {
+    background-color: #fff; /* White background on hover */
+}
+
+/* Styling for the table title */
+.table-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: capitalize; /* Convert title to sentence case */
+}
+
+/* Plot line over the title */
+.table-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 2px solid #000;
+    z-index: -1;
+}
+
+.table-title span {
+    background-color: #fff;
+    padding: 0 10px;
+    position: relative;
+}
+
+/* Make the table responsive */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: capitalize; /* Convert data labels to sentence case */
+    }
+}
+.logo {
+  width: 150px;
+  height: auto; 
+  display: block; 
+  margin: 20px auto; 
+}
